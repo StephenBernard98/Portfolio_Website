@@ -1,0 +1,231 @@
+.comp {
+  margin-left: 100px;
+}
+
+.comp h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  color: orangered;
+  text-shadow: 3px -4px 10px rgb(39, 38, 38);
+}
+
+h1 img {
+  width: 67px;
+  margin-bottom: -5px;
+  margin-left: 5px;
+}
+
+.comp__span {
+  color: rgb(248, 212, 7);
+  text-shadow: -3px -7px 5px rgb(201, 198, 198);
+}
+
+.comp__span2 {
+  color: steelblue;
+  text-shadow: -5px 4px 6px rgb(209, 206, 206);
+}
+
+.competence {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: rgb(245, 244, 244);
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  padding: 0 0 2px;
+  border: 1px dashed grey;
+  border-top-right-radius: 0;
+  box-shadow: 5px 7px 8px rgb(223, 223, 219);
+}
+
+.box img {
+  border-top-left-radius: 10px;
+  width: 300px;
+}
+
+.box p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: rgb(77, 76, 76);
+  text-shadow: 2px 2px 2px rgb(223, 223, 219);
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 35%;
+  left: 0;
+  font-size: 40px;
+  height: 100vh;
+  margin-top: 20px;
+  color: rgb(7, 58, 102);
+  text-align: center;
+  align-items: center;
+  width: 70px;
+}
+
+.myStyle {
+  margin-top: 30px;
+  color: orange;
+  -webkit-animation: trial 7s infinite;
+  animation: trial 7s infinite;
+}
+
+.myStyle__black {
+  color: black;
+}
+
+@-webkit-keyframes trial {
+
+  0%,
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    -webkit-transform: translateY(-30px) rotate(-6deg);
+    transform: translateY(-30px) rotate(-6deg);
+  }
+
+  30% {
+    -webkit-transform: translateY(15px) rotate(6deg);
+    transform: translateY(15px) rotate(6deg);
+  }
+
+  45% {
+    -webkit-transform: translateY(-15px) rotate(-3.6deg);
+    transform: translateY(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    -webkit-transform: translateY(9px) rotate(2.4deg);
+    transform: translateY(9px) rotate(2.4deg);
+  }
+
+  75% {
+    -webkit-transform: translateY(-6px) rotate(-1.2deg);
+    transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+
+@keyframes trial {
+
+  0%,
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    -webkit-transform: translateY(-30px) rotate(-6deg);
+    transform: translateY(-30px) rotate(-6deg);
+  }
+
+  30% {
+    -webkit-transform: translateY(15px) rotate(6deg);
+    transform: translateY(15px) rotate(6deg);
+  }
+
+  45% {
+    -webkit-transform: translateY(-15px) rotate(-3.6deg);
+    transform: translateY(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    -webkit-transform: translateY(9px) rotate(2.4deg);
+    transform: translateY(9px) rotate(2.4deg);
+  }
+
+  75% {
+    -webkit-transform: translateY(-6px) rotate(-1.2deg);
+    transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+
+
+@media screen and (max-width: 1100px) {
+  .comp {
+    margin-left: 60px;
+  }
+
+  .comp h1 {
+    color: green;
+  }
+
+  .competence {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .boxes {
+    margin-top: -70px;
+  }
+
+  .competence .box img {
+    border-top-left-radius: 10px;
+    width: 250px;
+  }
+}
+
+
+@media screen and (max-width: 950px) {
+  .icons {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .comp {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .comp h1 {
+    font-size: 2rem;
+    margin-bottom: -30px;
+  }
+
+  .competence {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px auto;
+    width: 100%;
+  }
+
+  .box {
+    margin-top: 40px;
+
+  }
+
+  .box img {
+    border-top-left-radius: 10px;
+    width: 300px;
+  }
+}
